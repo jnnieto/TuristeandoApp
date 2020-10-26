@@ -1,4 +1,4 @@
-package com.example.turistiandoapp.ui.slideshow
+package com.example.turistiandoapp.ui.actividades
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.turistiandoapp.R
 
-class SlideshowFragment : Fragment() {
+class ActividadesFragment : Fragment() {
 
-    private lateinit var slideshowViewModel: SlideshowViewModel
+    private lateinit var actividadesViewModel: ActividadesViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        slideshowViewModel =
-            ViewModelProvider(this).get(SlideshowViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_favoritos, container, false)
-        val textView: TextView = root.findViewById(R.id.text_slideshow)
-        slideshowViewModel.text.observe(viewLifecycleOwner, Observer {
+        actividadesViewModel =
+            ViewModelProvider(this).get(ActividadesViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_actividades, container, false)
+        val textView: TextView = root.findViewById(R.id.text_home)
+        actividadesViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
