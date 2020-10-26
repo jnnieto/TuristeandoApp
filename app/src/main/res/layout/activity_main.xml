@@ -77,7 +77,7 @@
                 android:layout_marginEnd="20dp"
                 android:ems="10"
                 android:hint="Ingresar una descripción"
-                android:inputType="textPersonName" />
+                android:inputType="textUri|textShortMessage" />
 
             <EditText
                 android:id="@+id/textCosto"
@@ -88,7 +88,7 @@
                 android:layout_marginEnd="20dp"
                 android:ems="10"
                 android:hint="Ingresa el costo de la actividad"
-                android:inputType="text" />
+                android:inputType="number|text" />
 
             <LinearLayout
                 android:layout_width="match_parent"
