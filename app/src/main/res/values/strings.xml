@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TuristeandoApp</string>
+    <string-array name="municipios">
+        <item>Seleccione</item>
+        <item>Bojacá</item>
+        <item>El Rosal</item>
+        <item>Facatativá</item>
+        <item>Funza</item>
+        <item>Madrid</item>
+        <item>Mosquera</item>
+        <item>Subachoque</item>
+        <item>Zipacón</item>
+    </string-array>
+</resources>
