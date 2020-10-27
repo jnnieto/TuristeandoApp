@@ -6,17 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".ui.actividades.ActividadesFragment">
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageButton
+                android:id="@+id/IBBojaca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bojaca" />
+
+            <ImageButton
+                android:id="@+id/IBElRosal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/el_rosal" />
+
+            <ImageButton
+                android:id="@+id/IBFacatativa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/facatativa" />
+
+            <ImageButton
+                android:id="@+id/IBFunza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/funza" />
+
+            <ImageButton
+                android:id="@+id/IBMadrid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/madrid" />
+
+            <ImageButton
+                android:id="@+id/IBMosquera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/mosquera" />
+
+            <ImageButton
+                android:id="@+id/IBSubachoque"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/subachoque" />
+
+            <ImageButton
+                android:id="@+id/IBZipacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zipacon" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
