@@ -22,4 +22,9 @@
     <style name="Theme.TuristiandoApp.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.TuristiandoApp.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="SplashTheme" parent="Theme.TuristiandoApp">
+        <item name="android:windowBackground">
+            @drawable/splash_screen_app
+        </item>
+    </style>
 </resources>

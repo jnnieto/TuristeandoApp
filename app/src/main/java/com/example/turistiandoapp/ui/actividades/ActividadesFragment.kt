@@ -22,9 +22,7 @@ class ActividadesFragment : Fragment() {
         actividadesViewModel =
             ViewModelProvider(this).get(ActividadesViewModel::class.java)
         val root = inflater.inflate(R.layout.fragment_actividades, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
         actividadesViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
         })
         return root
     }
