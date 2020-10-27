@@ -9,17 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TuristiandoApp">
+        <activity android:name=".InicioTuristeando"></activity>
         <activity
             android:name=".MainAppTuristeando"
             android:label="@string/title_activity_main_app_turisteando"
-            android:theme="@style/Theme.TuristiandoApp.NoActionBar"></activity>
-        <activity android:name=".MainActivity">
+            android:theme="@style/Theme.TuristiandoApp.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
     </application>
 
 </manifest>

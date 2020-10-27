@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        /*
         var database = FirebaseDatabase.getInstance().reference
         val act = (findViewById(R.id.textNomActividad) as EditText).text
         val dire = (findViewById(R.id.textDirecccion) as EditText).text
@@ -54,5 +54,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext,"El costo debe ser un dato de tipo numerico",Toast.LENGTH_LONG).show()
             }
         }
+
+         */
     }
 }
