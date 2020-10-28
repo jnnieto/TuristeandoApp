@@ -21,5 +21,7 @@
             android:theme="@style/Theme.TuristiandoApp.NoActionBar">
         </activity>
         <activity android:name=".MainActivity"></activity>
+        <activity android:name=".registro_turisteando"></activity>
+        <activity android:name=".login_turisteando"></activity>
     </application>
 </manifest>
