@@ -18,8 +18,10 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Configuración</string>
-
+    <string name="menu_municipios">Seleccione algún municipio</string>
     <string name="menu_actividades">Actividades</string>
     <string name="menu_publicaciones">Publicaciones</string>
     <string name="menu_favoritos">Favoritos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
