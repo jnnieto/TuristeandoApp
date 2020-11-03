@@ -22,6 +22,13 @@
     <string name="menu_actividades">Actividades</string>
     <string name="menu_publicaciones">Publicaciones</string>
     <string name="menu_favoritos">Favoritos</string>
+    <string name="nombre_actividad">Nombre de la actividad</string>
+    <string name="descrip_actividad">Descripción de la actividad</string>
+    <string name="publicardor">Nombre del publicador</string>
+    <string name="actividad_por">Publicado por: </string>
+    <string name="titulo_costo">Costo por persona</string>
+    <string name="costo_persona">$ 60.000</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_usuario">Ver perfil</string>
 </resources>

@@ -9,7 +9,11 @@
         android:id="@+id/nav_actividades"
         android:name="com.example.turistiandoapp.ui.actividades.MunicipiosFragment"
         android:label="@string/menu_actividades"
-        tools:layout="@layout/fragment_municipios" />
+        tools:layout="@layout/fragment_municipios" >
+        <!--<action
+            android:id="@+id/action_nav_actividades_to_actividadesFragment"
+            app:destination="@id/actividadesFragment" />-->
+    </fragment>
 
     <fragment
         android:id="@+id/nav_publicaciones"
@@ -22,4 +26,26 @@
         android:name="com.example.turistiandoapp.ui.favoritos.FavoritosFragment"
         android:label="@string/menu_favoritos"
         tools:layout="@layout/fragment_favoritos" />
+
+    <!--<fragment
+        android:id="@+id/actividadesFragment"
+        android:name="com.example.turistiandoapp.ui.actividades.ActividadesFragment"
+        android:label="ActividadesFragment"
+        tools:layout="@layout/fragment_actividades">
+        <action
+            android:id="@+id/action_actividadesFragment_to_ActividadDetalleDialogFragment"
+            app:destination="@id/ActividadDetalleDialogFragment" />
+    </fragment>-->
+
+    <fragment
+        android:id="@+id/nav_usuario"
+        android:name="com.example.turistiandoapp.ui.usuarios.UsuarioFragment"
+        android:label="@string/menu_usuario"
+        tools:layout="@layout/fragment_usuario" />
+    <!--<dialog
+        android:id="@+id/ActividadDetalleDialogFragment"
+        android:name="com.example.turistiandoapp.ui.actividades.DetalleActividadDialogFragment"
+        android:label="DetalleActividadDialogFragment"
+        tools:layout="@layout/fragment_detalle_actividad_dialog"/>-->
+
 </navigation>
