@@ -105,13 +105,40 @@
                 android:layout_marginTop="20dp"
                 app:srcCompat="@drawable/ic_launcher_background"
                 tools:ignore="VectorDrawableCompat" />
+            <EditText
+                android:id="@+id/textUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Ingrese su nombre"
+                android:inputType="textUri|textShortMessage" />
 
+            <EditText
+                android:id="@+id/textTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10"
+                android:hint="Ingrese su numero de telefono"
+                android:inputType="number|text" />
             <Button
                 android:id="@+id/btnPublicar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Publicar"/>
+            <ImageView
+                android:id="@+id/imageViewMostrar"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/ic_launcher_background"
+                tools:ignore="VectorDrawableCompat" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
