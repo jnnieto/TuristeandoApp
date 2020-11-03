@@ -1,14 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.usuarios.UsuarioFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="214dp"
+                android:layout_height="214dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                app:srcCompat="@drawable/turistaprofile" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="Nombre completo:"
+                android:textSize="26dp" />
+            <TextView
+                android:id="@+id/txtNombrePerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="TextView"
+                android:textSize="26dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="Correo electrónico:"
+                android:textSize="26dp" />
+            <TextView
+                android:id="@+id/txtCorreoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="TextView"
+                android:textSize="26dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="Télefono de contacto:"
+                android:textSize="26dp" />
+            <TextView
+                android:id="@+id/txtTelefonoPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center|center_horizontal"
+                android:text="TextView"
+                android:textSize="26dp" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="150dp" />
+            <Button
+                android:id="@+id/btnCerrarSesion"
+                android:layout_width="186dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="110dp"
+                android:layout_marginLeft="110dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginRight="100dp"
+                android:fontFamily="@font/quicksand_bold"
+                android:gravity="center"
+                android:text="CERRAR SESIÓN"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>
