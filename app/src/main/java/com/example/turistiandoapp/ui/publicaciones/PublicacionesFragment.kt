@@ -21,7 +21,7 @@ import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.turistiandoapp.Publicaciones
+import com.example.turistiandoapp.Actividades
 import com.example.turistiandoapp.R
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
@@ -183,7 +183,7 @@ class PublicacionesFragment : Fragment() {
                 if (task.isSuccessful) {
                     var downloadUrl = task.result.toString()
                     downloadUri = downloadUrl
-                    database.child("Actividades").child(act).setValue(Publicaciones(act,nomMun,dire,desc,costo,usuario,telefono,downloadUri))
+                    database.child("Actividades").child(act).setValue(Actividades(act,nomMun,dire,desc,costo,usuario,telefono,downloadUri))
                     Toast.makeText(activity,"Publicacion exitosa!",Toast.LENGTH_LONG).show()
                 } else {
                     // Handle failures

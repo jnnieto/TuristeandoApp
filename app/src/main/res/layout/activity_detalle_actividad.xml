@@ -1,23 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.actividades.DetalleActividadDialogFragment">
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+    tools:context=".ui.actividades.DetalleActividad">
 
-        <Toolbar
-            android:id="@+id/toolbarActividadDetalle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:targetApi="lollipop" />
-    </com.google.android.material.appbar.AppBarLayout>
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -34,11 +26,12 @@
                     android:layout_height="200dp">
 
                     <ImageView
+                        android:id="@+id/imagenActividad"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:src="@drawable/bojaca"
                         android:scaleType="centerCrop"/>
-                    
+
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
@@ -47,7 +40,7 @@
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/tvNombreActividad"
+                    android:id="@+id/tNombreActividad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/nombre_actividad"
@@ -69,7 +62,7 @@
                     android:layout_margin="5dp">
 
                     <TextView
-                        android:id="@+id/tvPublicadoPor"
+                        android:id="@+id/tPublicadoPor"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/actividad_por"
@@ -78,7 +71,7 @@
                         android:textColor="@color/black"/>
 
                     <TextView
-                        android:id="@+id/tvNombrePublicador"
+                        android:id="@+id/tNombrePublicador"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/publicardor"
@@ -89,7 +82,7 @@
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/tvDescripActividad"
+                    android:id="@+id/tDescripActividad"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="6dp"
@@ -98,7 +91,7 @@
                     android:textSize="19dp"/>
 
                 <TextView
-                    android:id="@+id/tvCostoPersona"
+                    android:id="@+id/tCostoPersona"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -109,7 +102,7 @@
                     android:textColor="@color/black"/>
 
                 <TextView
-                    android:id="@+id/tvValorCosto"
+                    android:id="@+id/tValorCosto"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -118,9 +111,26 @@
                     android:fontFamily="@font/quicksand_bold"
                     android:textSize="19dp"/>
 
+                <TextView
+                    android:id="@+id/tTelefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="1213123"
+                    android:gravity="center"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textSize="19dp"/>
+                <TextView
+                    android:id="@+id/tDireccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Calmfkljf"
+                    android:gravity="center"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textSize="19dp"/>
             </LinearLayout>
         </ScrollView>
     </FrameLayout>
 
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
