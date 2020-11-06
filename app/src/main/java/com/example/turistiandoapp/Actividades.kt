@@ -1,14 +1,14 @@
 package com.example.turistiandoapp
 
-class Publicaciones{
-    var nomActividad =""
-    var municipio = ""
-    var direccion = ""
-    var descripcion = ""
-    var costo = 0
-    var nombreUser = ""
-    var telefono = 0.0
-    var imagen = ""
+class Actividades{
+    var nomActividad : String? = null
+    var municipio: String? = null
+    var direccion : String? = null
+    var descripcion : String? = null
+    var costo : Int? = null
+    var nombreUser : String? = null
+    var telefono : Double? = null
+    var imagen : String? = null
 
     constructor(nomActividad: String, municipio: String, direccion: String, descripcion: String, costo: Int, nombreUser: String, telefono: Double, imagen: String) {
         this.nomActividad = nomActividad
@@ -20,4 +20,7 @@ class Publicaciones{
         this.telefono = telefono
         this.imagen = imagen
     }
+
+    constructor()
+
 }
