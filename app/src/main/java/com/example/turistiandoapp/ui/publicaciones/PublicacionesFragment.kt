@@ -21,6 +21,7 @@ import androidx.core.view.get
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.findNavController
 import com.example.turistiandoapp.Actividades
 import com.example.turistiandoapp.R
 import com.google.android.gms.tasks.OnCompleteListener
@@ -209,6 +210,16 @@ class PublicacionesFragment : Fragment() {
             var bitmap = MediaStore.Images.Media.getBitmap(activity?.contentResolver, filePath)
             imagePhoto.setImageBitmap(bitmap)
 
+        }
+    }
+
+    var btn_pub: Button?= null
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        btn_pub=view.findViewById(R.id.btnPublicar) as Button
+        btn_pub!!.setOnClickListener{
+            it.findNavController().navigate(R.id.action_nav_publicaciones_to_nav_actividades)
         }
     }
 

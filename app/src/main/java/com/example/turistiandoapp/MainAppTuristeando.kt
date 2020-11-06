@@ -36,7 +36,7 @@ class MainAppTuristeando : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_actividades, R.id.nav_publicaciones, R.id.nav_favoritos, R.id.nav_usuario
+                R.id.nav_actividades, R.id.nav_publicaciones, R.id.nav_favoritos, R.id.nav_usuario, R.id.navinicio
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
