@@ -5,6 +5,7 @@ import android.content.res.Resources
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.turistiandoapp.Actividades
@@ -12,7 +13,7 @@ import com.example.turistiandoapp.R
 import kotlinx.android.synthetic.main.item_actividades.view.*
 import java.lang.IllegalArgumentException
 
-class ActividadAdapter(val context: Context, val listaActividades : ArrayList<Actividades>) : RecyclerView.Adapter<BaseViewHolder<*>>() {
+class ActividadAdapter(val context: Context, val listaActividades : List<Actividades>,private val itemClickListener: OnActividadClickListener) : RecyclerView.Adapter<BaseViewHolder<*>>() {
 
     interface OnActividadClickListener{
         fun onItemClick(nomActividad: String?, nombreUser: String?, descripcion: String?, imagen: String?, municipio: String?, costo: Int?, direccion: String?, telefono: Double?)
@@ -35,18 +36,18 @@ class ActividadAdapter(val context: Context, val listaActividades : ArrayList<Ac
     }
     inner class ActividadesViewHolder (itemView: View) : BaseViewHolder<Actividades>(itemView){
         override fun bind(item: Actividades, position: Int) {
-
-            itemView.setOnClickListener{
-               // itemClickListener.onItemClick(item.nomActividad, item.nombreUser, item.descripcion,
-                        //item.imagen, item.municipio, item.costo, item.direccion, item.telefono)
-            }
             Glide.with(context).load(item.imagen).into(itemView.imageVActividad)
             itemView.tViewNombreActividad.text = item.nomActividad
             itemView.tViewNombrePublicador.text = item.nombreUser
             itemView.tViewDescripActividad.text = item.descripcion
-            val cost =  item.costo.toString()
-            val phone = item.telefono.toString()
-            val adress = item.direccion
+            itemView.tVCosto.text =  item.costo.toString()
+            itemView.tVTelefono.text = item.telefono.toString()
+            itemView.tVDireccion.text = item.direccion.toString()
+
+            itemView.setOnClickListener{
+                itemClickListener.onItemClick(item.nomActividad, item.nombreUser, item.descripcion,
+                    item.imagen, item.municipio, item.costo, item.direccion, item.telefono)
+            }
         }
 
     }

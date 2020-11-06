@@ -18,6 +18,17 @@
             android:layout_margin="10dp"/>
 
         <TextView
+            android:id="@+id/tVCosto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="@string/costo_persona"
+            android:textSize="19dp"
+            android:visibility="invisible" />
+
+        <TextView
             android:id="@+id/tViewNombreActividad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -31,6 +42,17 @@
             android:layout_width="wrap_content"
             android:layout_height="2dp"
             android:background="@color/black" />
+
+        <TextView
+            android:id="@+id/tVTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="1213123"
+            android:textSize="19dp"
+            android:visibility="invisible" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -59,13 +81,23 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/tVDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/quicksand_bold"
+            android:gravity="center"
+            android:text="Calmfkljf"
+            android:textSize="19dp"
+            android:visibility="invisible" />
+
+        <TextView
             android:id="@+id/tViewDescripActividad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="6dp"
-            android:text="@string/descrip_actividad"
             android:fontFamily="@font/quicksand_bold"
-            android:textSize="19dp"/>
-
+            android:text="@string/descrip_actividad"
+            android:textSize="19dp" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>

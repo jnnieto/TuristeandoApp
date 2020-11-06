@@ -23,58 +23,41 @@ class ActividadesDisponibles : AppCompatActivity(), ActividadAdapter.OnActividad
     lateinit var mRecyclerView : RecyclerView
     lateinit var database : DatabaseReference
     lateinit var actividadAdapter : ActividadAdapter
-    lateinit var listaTodasActividades :ArrayList<Actividades>
+    lateinit var listaTodasActividades :List<Actividades>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividades_disponibles)
-        //setUpRecyclerView()
+        setUpRecyclerView()
 
-        database = FirebaseDatabase.getInstance().reference.child("Actividades")
-        rvActividades.layoutManager = LinearLayoutManager(this)
-        database.child("Actividades").addValueEventListener(object: ValueEventListener{
-            override fun onCancelled(error: DatabaseError) {
-                Log.w( "loadPost:onCancelled", error.toException())
-            }
+        /*database = FirebaseDatabase.getInstance().reference.child("Actividades")
+        rvActividades.layoutManager = LinearLayoutManager(this)*/
 
-            override fun onDataChange(snapshot: DataSnapshot) {
-
-                if(snapshot.exists()){
-                    for (postSnapshot in snapshot.children) {
-                        /*var nomActividad2:String = postSnapshot.child("nomActividad").value.toString()
-                        var descripcion2:String = postSnapshot.child("descripcion").value.toString()
-                        var costo2:Int = postSnapshot.child("costo").value.toString().toInt()
-                        var direccion2:String = postSnapshot.child("direccion").value.toString()
-                        var municipio2:String= postSnapshot.child("municipio").value.toString()
-                        var nombreUser2:String = postSnapshot.child("nombreUser").value.toString()
-                        var telefono2 : Double = postSnapshot.child("telefono").value.toString().toDouble()
-                        var imagen2:String = postSnapshot.child("imagen").value.toString()
-
-                        listaTodasActividades.add(Actividades(nomActividad2, municipio2, direccion2,
-                                descripcion2, costo2 , nombreUser2, telefono2, imagen2))*/
-
-                        val actividad : Actividades? = postSnapshot.getValue(Actividades::class.java)
-                        if (actividad != null) {
-                            listaTodasActividades.add(actividad)
-                        }
-                    }
-                    rvActividades.adapter = ActividadAdapter(this@ActividadesDisponibles, listaTodasActividades)
-                }
-            }
-        })
     }
     private fun setUpRecyclerView (){
         rvActividades.layoutManager = LinearLayoutManager(this)
         rvActividades.addItemDecoration(DividerItemDecoration(this, DividerItemDecoration.VERTICAL))
-        val listActividades = listOf(
-                Actividades("Montar bici", "Facatativa", "Calle 1", "Disfruta un lindo paseo con tu familia en un recorrido al aire libre",
-                        12000, "NicoYTatis", 312.0001212, "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FHOLA%20FJDJFJFNICOL%C3%81S.jpg?alt=media&token=56fd408c-03e7-42a8-93fa-4a4b8b180e9e"),
-                Actividades("Montar bici", "Facatativa", "Calle 1", "Disfruta un lindo paseo con tu familia en un recorrido al aire libre",
-                        12000, "NicoYTatis", 312.0001212, "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FHOLA%20FJDJFJFNICOL%C3%81S.jpg?alt=media&token=56fd408c-03e7-42a8-93fa-4a4b8b180e9e"),
-                Actividades("ksdjfkjsdhfjkf", "pdsjfkdshfkjf", "sdjfkdsjldsjf", "Disfruta un lindo paseo con tu familia en un recorrido al aire libre",
-                        12000, "NicoYTatis", 312.0001212, "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FHOLA%20FJDJFJFNICOL%C3%81S.jpg?alt=media&token=56fd408c-03e7-42a8-93fa-4a4b8b180e9e")
-                )
-        //rvActividades.adapter = ActividadAdapter(this, listActividades, this)
+        listaTodasActividades= listOf(Actividades("EL PASEO HYGGE", "Subachoque",
+            "Calle 4 4 72, Subachoque 250220 Colombia", "Es un espacio comercial ubicado en Subachoque, a tan solo 1 hora de Bogotá, especialmente diseñado para brindar tranquilidad, rodeado por un entorno natural sin perder el estilo de la ciudad. en el paseo hygge gozara de lugares agradables donde podría tomar un descanso con placidez , alegría y bienestar.",
+            0, "Nicolás Nieto", 314.7526984,
+            "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FEL%20PASEO%20HYGGENICOL%C3%81S%20NIETO.jpg?alt=media&token=34b83583-ec01-45bf-bb41-a0ccfe0f8afb"),
+            Actividades("PIEDRAS DEL TUNJO", "Facatativá",
+                "Cl. 5, Facatativá, Cundinamarca", "El Parque Arqueológico de Facatativá (Piedras del Tunjo) comprende aproximadamente 27 hectáreas donde se pueden encontrar abrigos rocosos, pintura rupestre y paisajes con gran riqueza ambiental.\n" +
+                        "El parque se encuentra a una altura de 2.600 metros sobre el nivel del mar. Se encuentra ubicado a 1.150 metros al nordeste de la plaza de Facatativá y a 40 km de Bogotá. En sus inicios, fue adquirido por el Ministerio de la Cultura en 1.945 y declarado parque arqueológico en 1.946.",
+                0, "PIEDRAS DEL TUNJO", 312.4571234,
+                "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FPIERDAS%20DEL%20TUNJOPIEDRAS%20DE%20TUNJO.jpg?alt=media&token=f342df7f-7923-41b9-9dd4-4a4c24a495db"),
+            Actividades("PARQUE ACUÁTICO", "Mosquera",
+                "Cl. 10 #41 Mosquera, Cundinamarca", "Se encuentra ubicado en el Parque Cultural, funciona con diferentes programas para niños, adultos y personas diversamente hábiles y adultos mayores. En el Parque acuático también se llevan a cabo programas de Fitness y rumba en el agua.",
+                0, "Alcaldía de Mosquera", 320.6857415,
+                "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FPARQUE%20ACU%C3%81TICOALCALD%C3%8DA%20DE%20MOSQUERA.jpg?alt=media&token=3d9df0d2-2888-4171-b0c4-dfc6e28500d3"),
+            Actividades("EL PASEO HYGGE", "Subachoque",
+                "Calle 4 4 72, Subachoque 250220 Colombia", "Es un espacio comercial ubicado en Subachoque, a tan solo 1 hora de Bogotá, especialmente diseñado para brindar tranquilidad, rodeado por un entorno natural sin perder el estilo de la ciudad. en el paseo hygge gozara de lugares agradables donde podría tomar un descanso con placidez , alegría y bienestar.",
+                0, "Nicolás Nieto", 314.7526984,
+                "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FEL%20PASEO%20HYGGENICOL%C3%81S%20NIETO.jpg?alt=media&token=34b83583-ec01-45bf-bb41-a0ccfe0f8afb")
+        )
+
+
+        rvActividades.adapter = ActividadAdapter(this, listaTodasActividades, this)
     }
 
     fun getActividadesFromFirebase() {
@@ -96,10 +79,10 @@ class ActividadesDisponibles : AppCompatActivity(), ActividadAdapter.OnActividad
                         val telefono = postSnapshot.child("telefono").value
                         val imagen = postSnapshot.child("imagen").value
 
-                        //listaTodasActividades = listOf(Actividades(nomActividad as String, municipio as String, direccion as String,
-                          //      descripcion as String, 12000, nombreUser as String, telefono as Double, imagen as String))
+                        listaTodasActividades = listOf(Actividades(nomActividad as String, municipio as String, direccion as String,
+                               descripcion as String, 12000, nombreUser as String, telefono as Double, imagen as String))
                     }
-                    rvActividades.adapter = ActividadAdapter(this@ActividadesDisponibles, listaTodasActividades)
+                    rvActividades.adapter = ActividadAdapter(this@ActividadesDisponibles, listaTodasActividades, this@ActividadesDisponibles)
                 }
             }
 

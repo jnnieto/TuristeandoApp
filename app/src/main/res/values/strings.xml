@@ -14,7 +14,7 @@
     <string name="title_activity_main_app_turisteando">MainAppTuristeando</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_title">Bienvenido usuario</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Configuración</string>
@@ -26,9 +26,12 @@
     <string name="descrip_actividad">Descripción de la actividad</string>
     <string name="publicardor">Nombre del publicador</string>
     <string name="actividad_por">Publicado por: </string>
-    <string name="titulo_costo">Costo por persona</string>
+    <string name="titulo_costo">Costo por persona: </string>
     <string name="costo_persona">$ 60.000</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="menu_usuario">Ver perfil</string>
+    <string name="telefono">Teléfono con el cual te puedes contactar: </string>
+    <string name="direccion">Ubicación de la actividad turística:</string>
+    <string name="bienvenido_actividad">¿Qué te gustaría hacer?</string>
 </resources>
