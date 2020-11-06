@@ -3,26 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_actividades">
+    app:startDestination="@id/navinicio">
 
     <fragment
         android:id="@+id/nav_actividades"
         android:name="com.example.turistiandoapp.ui.actividades.MunicipiosFragment"
         android:label="@string/menu_actividades"
         tools:layout="@layout/fragment_municipios" >
-        <!--<action
-            android:id="@+id/action_nav_actividades_to_actividadesFragment"
-            app:destination="@id/actividadesFragment" />-->
         <action
-            android:id="@+id/action_nav_actividades_to_registro_turisteando"
-            app:destination="@id/registro_turisteando" />
+            android:id="@+id/action_nav_actividades_to_actividadesDisponibles"
+            app:destination="@id/actividadesDisponibles" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_publicaciones"
         android:name="com.example.turistiandoapp.ui.publicaciones.PublicacionesFragment"
         android:label="@string/menu_publicaciones"
-        tools:layout="@layout/fragment_publicaciones" />
+        tools:layout="@layout/fragment_publicaciones" >
+        <action
+            android:id="@+id/action_nav_publicaciones_to_nav_actividades"
+            app:destination="@id/nav_actividades" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_favoritos"
@@ -50,6 +51,33 @@
         android:name="com.example.turistiandoapp.registro_turisteando"
         android:label="activity_registro_turisteando"
         tools:layout="@layout/activity_registro_turisteando" />
+    <activity
+        android:id="@+id/actividadesDisponibles"
+        android:name="com.example.turistiandoapp.ui.actividades.ActividadesDisponibles"
+        android:label="activity_actividades_disponibles"
+        tools:layout="@layout/activity_actividades_disponibles" />
+    <activity
+        android:id="@+id/inicioTuristeando"
+        android:name="com.example.turistiandoapp.InicioTuristeando"
+        android:label="activity_inicio_turisteando"
+        tools:layout="@layout/activity_inicio_turisteando" />
+    <activity
+        android:id="@+id/login_turisteando"
+        android:name="com.example.turistiandoapp.login_turisteando"
+        android:label="activity_login_turisteando"
+        tools:layout="@layout/activity_login_turisteando" />
+    <fragment
+        android:id="@+id/navinicio"
+        android:name="com.example.turistiandoapp.InicioOpcionesFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio_opciones" >
+        <action
+            android:id="@+id/action_inicioOpcionesFragment_to_nav_actividades"
+            app:destination="@id/nav_actividades" />
+        <action
+            android:id="@+id/action_navinicio_to_nav_publicaciones"
+            app:destination="@id/nav_publicaciones" />
+    </fragment>
     <!--<dialog
         android:id="@+id/ActividadDetalleDialogFragment"
         android:name="com.example.turistiandoapp.ui.actividades.DetalleActividadDialogFragment"

@@ -38,35 +38,35 @@ class MunicipiosFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         btn_bojaca=view.findViewById(R.id.IBBojaca) as ImageButton
         btn_bojaca!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_rosal=view.findViewById(R.id.IBElRosal) as ImageButton
         btn_rosal!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_facatativa=view.findViewById(R.id.IBFacatativa) as ImageButton
         btn_facatativa!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_funza=view.findViewById(R.id.IBFunza) as ImageButton
         btn_funza!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_madrid=view.findViewById(R.id.IBMadrid) as ImageButton
         btn_madrid!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_mosquera=view.findViewById(R.id.IBMosquera) as ImageButton
         btn_mosquera!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_subachoque=view.findViewById(R.id.IBSubachoque) as ImageButton
         btn_subachoque!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
         btn_zipacon=view.findViewById(R.id.IBZipacon) as ImageButton
         btn_zipacon!!.setOnClickListener{
-            it.findNavController().navigate(R.id.action_nav_actividades_to_registro_turisteando)
+            it.findNavController().navigate(R.id.action_nav_actividades_to_actividadesDisponibles)
         }
     }
 
