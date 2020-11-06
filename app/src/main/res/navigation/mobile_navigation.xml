@@ -13,6 +13,9 @@
         <!--<action
             android:id="@+id/action_nav_actividades_to_actividadesFragment"
             app:destination="@id/actividadesFragment" />-->
+        <action
+            android:id="@+id/action_nav_actividades_to_registro_turisteando"
+            app:destination="@id/registro_turisteando" />
     </fragment>
 
     <fragment
@@ -42,6 +45,11 @@
         android:name="com.example.turistiandoapp.ui.usuarios.UsuarioFragment"
         android:label="@string/menu_usuario"
         tools:layout="@layout/fragment_usuario" />
+    <activity
+        android:id="@+id/registro_turisteando"
+        android:name="com.example.turistiandoapp.registro_turisteando"
+        android:label="activity_registro_turisteando"
+        tools:layout="@layout/activity_registro_turisteando" />
     <!--<dialog
         android:id="@+id/ActividadDetalleDialogFragment"
         android:name="com.example.turistiandoapp.ui.actividades.DetalleActividadDialogFragment"
