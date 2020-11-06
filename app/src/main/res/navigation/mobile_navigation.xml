@@ -31,16 +31,6 @@
         android:label="@string/menu_favoritos"
         tools:layout="@layout/fragment_favoritos" />
 
-    <!--<fragment
-        android:id="@+id/actividadesFragment"
-        android:name="com.example.turistiandoapp.ui.actividades.ActividadesFragment"
-        android:label="ActividadesFragment"
-        tools:layout="@layout/fragment_actividades">
-        <action
-            android:id="@+id/action_actividadesFragment_to_ActividadDetalleDialogFragment"
-            app:destination="@id/ActividadDetalleDialogFragment" />
-    </fragment>-->
-
     <fragment
         android:id="@+id/nav_usuario"
         android:name="com.example.turistiandoapp.ui.usuarios.UsuarioFragment"
@@ -78,10 +68,5 @@
             android:id="@+id/action_navinicio_to_nav_publicaciones"
             app:destination="@id/nav_publicaciones" />
     </fragment>
-    <!--<dialog
-        android:id="@+id/ActividadDetalleDialogFragment"
-        android:name="com.example.turistiandoapp.ui.actividades.DetalleActividadDialogFragment"
-        android:label="DetalleActividadDialogFragment"
-        tools:layout="@layout/fragment_detalle_actividad_dialog"/>-->
 
 </navigation>

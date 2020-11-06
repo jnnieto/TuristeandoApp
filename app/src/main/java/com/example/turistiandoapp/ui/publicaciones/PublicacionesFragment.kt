@@ -213,7 +213,7 @@ class PublicacionesFragment : Fragment() {
         }
     }
 
-    var btn_pub: Button?= null
+    /*var btn_pub: Button?= null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -221,6 +221,6 @@ class PublicacionesFragment : Fragment() {
         btn_pub!!.setOnClickListener{
             it.findNavController().navigate(R.id.action_nav_publicaciones_to_nav_actividades)
         }
-    }
+    }*/
 
 }
