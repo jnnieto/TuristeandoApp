@@ -89,7 +89,15 @@ class ActividadesDisponibles : AppCompatActivity(), ActividadAdapter.OnActividad
                 Actividades("SAN ANDRÉS GOLF CLUB", "Funza",
                         "Direccion: Calle 15 #24-11 Funza Colombia", "Está ubicado en el corazón de la sabana occidental de Bogotá, en el Municipio de Funza , elegido por gozar de un microclima especial con un 25% menos en el régimen de lluvias en un extenso terreno que cuenta con un drenaje único, facilitando la práctica de deportes al aire libre en temporadas de lluvias.",
                         0, "San Andrés Golf Club", 314.7526984,
-                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FSAN%20ANDR%C3%89S%20GOLF%20CLUBSAN%20ANDR%C3%89S%20GOLF%20CLUB.jpg?alt=media&token=7872095d-451c-4dc7-8d80-d6442ad455b2")
+                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FSAN%20ANDR%C3%89S%20GOLF%20CLUBSAN%20ANDR%C3%89S%20GOLF%20CLUB.jpg?alt=media&token=7872095d-451c-4dc7-8d80-d6442ad455b2"),
+                Actividades("FESTIVAL DE LAS FLORES IX VERSIÓN", "Madrid",
+                        "Carrera 4 N° 4-43, parque Pedro Fernández Madrid", " Madrid cumple 461 años y para celebrar, del 12 al 22 de noviembre, se llevará a cabo una nueva edición del Festival de las Flores, certamen que vendrá acompañado de actividades artísticas, deportivas, gastronómicas y de emprendimiento, que podrán ser disfrutadas desde las redes sociales de la Alcaldía de Madrid, Cundinamarca.",
+                        0, "Alcaldía de Madrid Cundinamarca", 312.7416585,
+                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FFESTIVAL%20DE%20LAS%20FLORES%20IX%20VERSI%C3%93NALCALD%C3%8DA%20DE%20MADRID%20CUNDINAMARCA.jpg?alt=media&token=075443e1-2942-4905-a8c5-3c9de0268e85"),
+                Actividades("RECREACIÓN Y DIVERSIÓN EN FAMILIA", "Madrid",
+                        "Km 21 Vía Bogotá, Madrid, Cundinamarca, Colombia", "El Parque es un hermoso lugar, único en el Occidente de la Sabana, situado en el municipio de Madrid a sólo 15 minutos de la salida de Bogotá por el peaje de  la calle 13, creado para la recreación de las familias de toda la región y de Bogotá.",
+                        0, "Adriana  Molina, Directora del Instituto Municipal Para El Deporte y La Recreación De Madrid", 325.8694125,
+                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FRECREACI%C3%93N%20Y%20DIVERSI%C3%93N%20EN%20FAMILIARECREACI%C3%93N%20Y%20DIVERSI%C3%93N%20EN%20FAMILIA.jpg?alt=media&token=65f199f9-9771-4448-91f6-5752368ba2dd")
 
         )
         rvActividades.adapter = ActividadAdapter(this, listaTodasActividades, this)
