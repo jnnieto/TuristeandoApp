@@ -64,7 +64,8 @@ class PublicacionesFragment : Fragment() {
         val imagePhoto = root.findViewById<View>(R.id.imageViewPhoto) as ImageView
         val btn = root.findViewById<View>(R.id.btnPublicar) as Button
         val cargar = root.findViewById<View>(R.id.btnCargarImagen) as Button
-        var mostarImaen = root.findViewById<View>(R.id.imageViewMostrar) as ImageView
+
+
 
         var storage = FirebaseStorage.getInstance()
 
@@ -77,7 +78,7 @@ class PublicacionesFragment : Fragment() {
 
         cargarImagen.getFile(file).addOnSuccessListener {
             var bitpath = BitmapFactory.decodeFile(file.absolutePath)
-            mostarImaen.setImageBitmap(bitpath)
+           //mostarImaen.setImageBitmap(bitpath)
         }
         var nomMun :String = ""
         val mun = (root.findViewById<View>(R.id.spinner) as Spinner)

@@ -12,6 +12,7 @@ class DetalleActividad : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalle_actividad)
+        title = "Detalles Actividad"
         if(intent.extras != null){
             Glide.with(this).load(intent.getStringExtra("imagenActividad")).into(imagenActividad)
             tNombreActividad.text = intent.getStringExtra("tNombreActividad")

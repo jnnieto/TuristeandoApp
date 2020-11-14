@@ -29,6 +29,7 @@ class ActividadesDisponibles : AppCompatActivity(), ActividadAdapter.OnActividad
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actividades_disponibles)
         setUpRecyclerView()
+        title = "Actividades"
 
         database = FirebaseDatabase.getInstance().reference.child("Actividades")
         rvActividades.layoutManager = LinearLayoutManager(this)

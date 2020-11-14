@@ -42,6 +42,7 @@
                 android:gravity="center|center_horizontal"
                 android:text="Nombre completo:"
                 android:textSize="26dp" />
+
             <TextView
                 android:id="@+id/txtNombrePerfil"
                 android:layout_width="match_parent"
@@ -52,7 +53,7 @@
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:gravity="center|center_horizontal"
-                android:text="TextView"
+                android:text="Golden Team"
                 android:textSize="26dp" />
             <Space
                 android:layout_width="match_parent"
@@ -69,6 +70,7 @@
                 android:gravity="center|center_horizontal"
                 android:text="Correo electrónico:"
                 android:textSize="26dp" />
+
             <TextView
                 android:id="@+id/txtCorreoPerfil"
                 android:layout_width="match_parent"
@@ -79,7 +81,7 @@
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:gravity="center|center_horizontal"
-                android:text="TextView"
+                android:text="goldenteam@gmail.com"
                 android:textSize="26dp" />
             <Space
                 android:layout_width="match_parent"
@@ -96,6 +98,7 @@
                 android:gravity="center|center_horizontal"
                 android:text="Télefono de contacto:"
                 android:textSize="26dp" />
+
             <TextView
                 android:id="@+id/txtTelefonoPerfil"
                 android:layout_width="match_parent"
@@ -106,7 +109,7 @@
                 android:layout_marginRight="30dp"
                 android:fontFamily="@font/quicksand_bold"
                 android:gravity="center|center_horizontal"
-                android:text="TextView"
+                android:text="3504321177"
                 android:textSize="26dp" />
             <Space
                 android:layout_width="match_parent"
