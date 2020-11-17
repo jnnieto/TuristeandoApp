@@ -79,27 +79,14 @@ class ActividadesDisponibles : AppCompatActivity(), ActividadAdapter.OnActividad
                         "El parque se encuentra a una altura de 2.600 metros sobre el nivel del mar. Se encuentra ubicado a 1.150 metros al nordeste de la plaza de Facatativá y a 40 km de Bogotá. En sus inicios, fue adquirido por el Ministerio de la Cultura en 1.945 y declarado parque arqueológico en 1.946.",
                         0, "PIEDRAS DEL TUNJO", 312.4571234,
                         "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FPIERDAS%20DEL%20TUNJOPIEDRAS%20DE%20TUNJO.jpg?alt=media&token=f342df7f-7923-41b9-9dd4-4a4c24a495db"),
-                Actividades("PARQUE ACUÁTICO", "Mosquera",
-                        "Cl. 10 #41 Mosquera, Cundinamarca", "Se encuentra ubicado en el Parque Cultural, funciona con diferentes programas para niños, adultos y personas diversamente hábiles y adultos mayores. En el Parque acuático también se llevan a cabo programas de Fitness y rumba en el agua.",
-                        0, "Alcaldía de Mosquera", 320.6857415,
-                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FPARQUE%20ACU%C3%81TICOALCALD%C3%8DA%20DE%20MOSQUERA.jpg?alt=media&token=3d9df0d2-2888-4171-b0c4-dfc6e28500d3"),
-                Actividades("REFUGIO DE LOS ARCÁNGELES", "El Rosal",
-                        "Vía a la Pradera", "El Refugio de los Arcángeles es un lugar donde puedes pasar tiempo con tu familia, disfrutando de la naturaleza. La alcaldía del Rosal te quiere invitar a que vaya y participes al festival del cometas en Noviembre",
-                        0, "Alcaldía del Rosal", 314.7526984,
-                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FREFUGIO%20DE%20LOS%20ARC%C3%81NGELESALCALD%C3%8DA%20DEL%20ROSAL.jpg?alt=media&token=d8a36a0e-9c2b-4111-a63b-b0f4e951fb19"),
-                Actividades("SAN ANDRÉS GOLF CLUB", "Funza",
-                        "Direccion: Calle 15 #24-11 Funza Colombia", "Está ubicado en el corazón de la sabana occidental de Bogotá, en el Municipio de Funza , elegido por gozar de un microclima especial con un 25% menos en el régimen de lluvias en un extenso terreno que cuenta con un drenaje único, facilitando la práctica de deportes al aire libre en temporadas de lluvias.",
-                        0, "San Andrés Golf Club", 314.7526984,
-                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FSAN%20ANDR%C3%89S%20GOLF%20CLUBSAN%20ANDR%C3%89S%20GOLF%20CLUB.jpg?alt=media&token=7872095d-451c-4dc7-8d80-d6442ad455b2"),
-                Actividades("FESTIVAL DE LAS FLORES IX VERSIÓN", "Madrid",
-                        "Carrera 4 N° 4-43, parque Pedro Fernández Madrid", " Madrid cumple 461 años y para celebrar, del 12 al 22 de noviembre, se llevará a cabo una nueva edición del Festival de las Flores, certamen que vendrá acompañado de actividades artísticas, deportivas, gastronómicas y de emprendimiento, que podrán ser disfrutadas desde las redes sociales de la Alcaldía de Madrid, Cundinamarca.",
-                        0, "Alcaldía de Madrid Cundinamarca", 312.7416585,
-                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FFESTIVAL%20DE%20LAS%20FLORES%20IX%20VERSI%C3%93NALCALD%C3%8DA%20DE%20MADRID%20CUNDINAMARCA.jpg?alt=media&token=075443e1-2942-4905-a8c5-3c9de0268e85"),
-                Actividades("RECREACIÓN Y DIVERSIÓN EN FAMILIA", "Madrid",
-                        "Km 21 Vía Bogotá, Madrid, Cundinamarca, Colombia", "El Parque es un hermoso lugar, único en el Occidente de la Sabana, situado en el municipio de Madrid a sólo 15 minutos de la salida de Bogotá por el peaje de  la calle 13, creado para la recreación de las familias de toda la región y de Bogotá.",
-                        0, "Adriana  Molina, Directora del Instituto Municipal Para El Deporte y La Recreación De Madrid", 325.8694125,
-                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FRECREACI%C3%93N%20Y%20DIVERSI%C3%93N%20EN%20FAMILIARECREACI%C3%93N%20Y%20DIVERSI%C3%93N%20EN%20FAMILIA.jpg?alt=media&token=65f199f9-9771-4448-91f6-5752368ba2dd")
-
+                Actividades("RECREACIÓN Y DIVERSIÓN EN FAMILIA", "Facatativá",
+                        "Calle 1AE num5-69", "El Parque es un hermoso lugar, único en el Occidente de la Sabana, situado en el municipio de Madrid a sólo 15 minutos de la entrada de faca, creado para la recreación de las familias de toda la región.",
+                        0, "Adriana  Molina, Directora del Instituto Municipal Para El Deporte y La Recreación", 325.8694125,
+                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FRECREACI%C3%93N%20Y%20DIVERSI%C3%93N%20EN%20FAMILIARECREACI%C3%93N%20Y%20DIVERSI%C3%93N%20EN%20FAMILIA.jpg?alt=media&token=65f199f9-9771-4448-91f6-5752368ba2dd"),
+                Actividades("SUSTENTACION PI", "Facatativá",
+                        "UDEC", "Sustentacion proyecto PI",
+                        0, "Sebastian", 302.4443337,
+                        "https://firebasestorage.googleapis.com/v0/b/turisteandoprueba1.appspot.com/o/image%2FACTIVIDAD%20EN%20EL%20ROSALDGHGFHFG.jpg?alt=media&token=c2e615c7-968b-46ca-a359-484b8b7b1def")
         )
         rvActividades.adapter = ActividadAdapter(this, listaTodasActividades, this)
     }
